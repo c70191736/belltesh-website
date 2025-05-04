@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Belltesh </title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Belltesh</h1>
+  
+      <!-- Hamburger Icon for Mobile -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-overlay">
+      <div class="container">
+        <h2>Welcome to Belltesh</h2>
+        <p>Your go-to place for real estate and insurance services. Let's make your dreams come true!</p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image-wrapper">
+        <img src="images/about.jpg" alt="About us image" class="about-image" />
+      </div>
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          At Belltesh, we specialize in providing top-notch real estate and insurance services.
+          Our mission is to help individuals and families find their dream homes while securing
+          their future through trusted insurance solutions.
+        </p>
+        <a href="#services" class="about-btn">See Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+  
+    <!-- Real Estate Carousel -->
+    <div class="carousel-container">
+      <h3>Real Estate Services</h3>
+      <div class="carousel real-estate">
+        <div class="service-card">
+          <img src="images/sale.jpg" alt="Property Sales">
+          <h4>Property Sales</h4>
+          <p>Buy or sell residential and commercial properties easily.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/management.jpg" alt="Property Management">
+          <h4>Property Management</h4>
+          <p>We take care of your rental properties end-to-end.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/land.jpg" alt="Land Acquisition">
+          <h4>Land Acquisition</h4>
+          <p>Secure lands in prime locations with full documentation.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/leasing.jpg" alt="Leasing Services">
+          <h4>Leasing</h4>
+          <p>Find affordable, well-maintained properties for lease.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Insurance Carousel -->
+    <div class="carousel-container">
+      <h3>Insurance Services</h3>
+      <div class="carousel insurance">
+        <div class="service-card">
+          <img src="images/life.jpg" alt="Life Insurance">
+          <h4>Life Insurance</h4>
+          <p>Protect your family’s future with our flexible plans.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/health.jpg" alt="Health Insurance">
+          <h4>Health Insurance</h4>
+          <p>Affordable medical cover for individuals and families.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/property-insurance.jpg" alt="Property Insurance">
+          <h4>Property Insurance</h4>
+          <p>Shield your home or business against damages.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/business.jpg" alt="Business Insurance">
+          <h4>Business Insurance</h4>
+          <p>Secure your business assets and reduce risk exposure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Us -->
+  <section id="contact">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+  
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+  
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+  
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>Phone:</strong> +234 123 456 7890</p>
+        <p><strong>Email:</strong> info@belltesh.com</p>
+        <p><strong>Office:</strong> 10 Lekki Phase 1, Lagos, Nigeria</p>
+        <p>We're open Monday to Friday, 9am to 5pm.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- FAQs -->
+<!-- FAQ Section -->
+<section id="faqs">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(0)">What types of properties do you handle in your real estate services?</div>
+        <div class="answer">We specialize in a wide range of real estate properties including residential homes, commercial buildings, plots of land, and rental apartments. Whether you're looking to buy, sell, lease, or invest, our experienced agents are here to guide you every step of the way.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(1)">How can I get an insurance policy through your company?</div>
+        <div class="answer">Getting insured with us is easy. Simply reach out through our website or visit our office for a free consultation. We will assess your needs and recommend the best coverage plan for your property, business, vehicle, or life, ensuring maximum protection at competitive rates.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(2)">Do you assist with property leasing and tenant management?</div>
+        <div class="answer">Yes, we offer complete leasing solutions including tenant placement, background checks, rent collection, and property maintenance support. Our goal is to help property owners enjoy hassle-free income from their investments.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(3)">What does your business insurance cover?</div>
+        <div class="answer">Our business insurance policies cover risks such as fire, theft, liability, equipment damage, and employee injury. We tailor each policy to fit your business needs, ensuring you're protected from unexpected disruptions.</div>
+      </div>
+      <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(4)">Can I combine real estate and insurance services into a single package?</div>
+        <div class="answer">Absolutely. We offer bundled service packages that combine property acquisition or leasing with relevant insurance coverage. This helps you save time and money while ensuring every aspect of your property or business is fully protected.</div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Belltesh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>
